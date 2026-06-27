@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Tracker Pro</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Bismillah Coding Tracker</h1>
+
+    <button id="themeBtn">
+        🌙 Theme
+    </button>
+</header>
+
+<div class="container">
+
+    <section class="dashboard">
+
+        <div class="card">
+            <h3>Total Hours</h3>
+            <span id="totalHours">0</span>
+        </div>
+
+        <div class="card">
+            <h3>Total Sessions</h3>
+            <span id="totalSessions">0</span>
+        </div>
+
+        <div class="card">
+            <h3>Languages</h3>
+            <span id="totalLanguages">0</span>
+        </div>
+
+    </section>
+
+    <section class="glass form-section">
+
+        <h2>Add Coding Session</h2>
+
+        <form id="sessionForm">
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+            <input
+                type="text"
+                id="language"
+                placeholder="Language"
+                required
+            >
+
+            <input
+                type="number"
+                id="hours"
+                placeholder="Hours"
+                min="1"
+                required
+            >
+
+            <input
+                type="text"
+                id="topic"
+                placeholder="Topic"
+                required
+            >
+
+            <button type="submit">
+                Add Session
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="glass">
+
+        <h2>Progress</h2>
+
+        <div class="progress-container">
+
+            <div
+                id="progressBar"
+                class="progress-bar"
+            >
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="glass">
+
+        <h2>Analytics</h2>
+
+        <canvas id="hoursChart"></canvas>
+
+    </section>
+
+    <section class="glass">
+
+        <h2>Session History</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Language</th>
+                    <th>Hours</th>
+                    <th>Topic</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="sessionTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
