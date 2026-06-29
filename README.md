@@ -44,6 +44,6 @@ Open index.html in your browser or run it using VS Code Live Server.
 This project is licensed under the MIT License.
 
 👨‍💻 Author
-BISMA NAWAZ
+LEGEND
 
 Frontend Developer | HTML • CSS • JavaScript
