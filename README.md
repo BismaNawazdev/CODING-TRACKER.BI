@@ -38,13 +38,6 @@ Open index.html in your browser or run it using VS Code Live Server.
 👤 User authentication
 ☁️ Cloud database integration
 📅 Weekly and monthly reports
-📸 Preview
-
-Add screenshots of your application here.
-
-
-
-Contributions, suggestions, and improvements are welcome. Feel free to fork the repository and submit a pull request.
 
 📄 License
 
